@@ -835,6 +835,10 @@
     (stroke (width 0.1) (type default)) (layer "Edge.Cuts") (tstamp a6b44c52-4b73-4d36-9cdd-18fad83f45e9))
   (gr_line (start 100 30) (end 150 30)
     (stroke (width 0.1) (type default)) (layer "Edge.Cuts") (tstamp d5c51395-3363-4843-ab9c-3363ea966590))
+  (gr_text_box "Star Raiders Video Touch Pad - Brett Hallen, Sept. 2023 - youtube.com/@brfff"
+    (start 103.886 126.238) (end 108.204 57.15) (angle 90) (layer "F.SilkS") (tstamp e1e8c6b8-54f6-45ff-824d-8294f9336821)
+      (effects (font (size 1 1) (thickness 0.15)) (justify top))
+    (stroke (width 0.1) (type solid))  )
 
   (segment (start 124.5015 51.9295) (end 124.5015 70.4025) (width 0.25) (layer "F.Cu") (net 1) (tstamp 42c24f2a-e202-4be4-9f66-9c0b007d6175))
   (segment (start 124.5015 70.4025) (end 124.45 70.454) (width 0.25) (layer "F.Cu") (net 1) (tstamp 50ce543f-2894-4a00-b68d-2099e32d6e6b))

@@ -4,6 +4,9 @@ Projects for the Atari 400/800 & 2600.<br>
 ## Custom Star Raiders Video Touch Pad
 Star Raiders only uses five of the 12 possible buttons so I thought it *might* be interesting to make a custom controller.  It's pretty simple.<br>
 
+{Fri 15-Sept-2023}<br>
+Sent board prototype for fabrication<br>
+
 ## Video Touch Pad
 Re-creation of the full 12-button Video Touch Pad.<br>
 

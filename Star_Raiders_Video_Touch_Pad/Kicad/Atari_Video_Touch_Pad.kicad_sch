@@ -1,586 +1,1809 @@
-(kicad_sch (version 20230121) (generator eeschema)
-
-  (uuid d1c04c94-5d37-410e-8b71-be70c5a0936f)
-
-  (paper "A4")
-
-  (title_block
-    (title "Star Raiders Video Touch Pad")
-    (date "2023-09-11")
-    (rev "INITIAL")
-    (company "Brett Hallen")
-    (comment 1 "youtube.com/@brfff")
-    (comment 3 "Custom keypad for Atari Star Raiders")
-  )
-
-  (lib_symbols
-    (symbol "Connector_Generic:Conn_01x09" (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
-      (property "Reference" "J" (at 0 12.7 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Value" "Conn_01x09" (at 0 -12.7 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Footprint" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "~" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_keywords" "connector" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "Generic connector, single row, 01x09, script generated (kicad-library-utils/schlib/autogen/connector/)" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_fp_filters" "Connector*:*_1x??_*" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "Conn_01x09_1_1"
-        (rectangle (start -1.27 -10.033) (end 0 -10.287)
-          (stroke (width 0.1524) (type default))
-          (fill (type none))
-        )
-        (rectangle (start -1.27 -7.493) (end 0 -7.747)
-          (stroke (width 0.1524) (type default))
-          (fill (type none))
-        )
-        (rectangle (start -1.27 -4.953) (end 0 -5.207)
-          (stroke (width 0.1524) (type default))
-          (fill (type none))
-        )
-        (rectangle (start -1.27 -2.413) (end 0 -2.667)
-          (stroke (width 0.1524) (type default))
-          (fill (type none))
-        )
-        (rectangle (start -1.27 0.127) (end 0 -0.127)
-          (stroke (width 0.1524) (type default))
-          (fill (type none))
-        )
-        (rectangle (start -1.27 2.667) (end 0 2.413)
-          (stroke (width 0.1524) (type default))
-          (fill (type none))
-        )
-        (rectangle (start -1.27 5.207) (end 0 4.953)
-          (stroke (width 0.1524) (type default))
-          (fill (type none))
-        )
-        (rectangle (start -1.27 7.747) (end 0 7.493)
-          (stroke (width 0.1524) (type default))
-          (fill (type none))
-        )
-        (rectangle (start -1.27 10.287) (end 0 10.033)
-          (stroke (width 0.1524) (type default))
-          (fill (type none))
-        )
-        (rectangle (start -1.27 11.43) (end 1.27 -11.43)
-          (stroke (width 0.254) (type default))
-          (fill (type background))
-        )
-        (pin passive line (at -5.08 10.16 0) (length 3.81)
-          (name "Pin_1" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at -5.08 7.62 0) (length 3.81)
-          (name "Pin_2" (effects (font (size 1.27 1.27))))
-          (number "2" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at -5.08 5.08 0) (length 3.81)
-          (name "Pin_3" (effects (font (size 1.27 1.27))))
-          (number "3" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at -5.08 2.54 0) (length 3.81)
-          (name "Pin_4" (effects (font (size 1.27 1.27))))
-          (number "4" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at -5.08 0 0) (length 3.81)
-          (name "Pin_5" (effects (font (size 1.27 1.27))))
-          (number "5" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at -5.08 -2.54 0) (length 3.81)
-          (name "Pin_6" (effects (font (size 1.27 1.27))))
-          (number "6" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at -5.08 -5.08 0) (length 3.81)
-          (name "Pin_7" (effects (font (size 1.27 1.27))))
-          (number "7" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at -5.08 -7.62 0) (length 3.81)
-          (name "Pin_8" (effects (font (size 1.27 1.27))))
-          (number "8" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at -5.08 -10.16 0) (length 3.81)
-          (name "Pin_9" (effects (font (size 1.27 1.27))))
-          (number "9" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
-    (symbol "Device:R" (pin_numbers hide) (pin_names (offset 0)) (in_bom yes) (on_board yes)
-      (property "Reference" "R" (at 2.032 0 90)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Value" "R" (at 0 0 90)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Footprint" "" (at -1.778 0 90)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "~" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_keywords" "R res resistor" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "Resistor" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_fp_filters" "R_*" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "R_0_1"
-        (rectangle (start -1.016 -2.54) (end 1.016 2.54)
-          (stroke (width 0.254) (type default))
-          (fill (type none))
-        )
-      )
-      (symbol "R_1_1"
-        (pin passive line (at 0 3.81 270) (length 1.27)
-          (name "~" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 0 -3.81 90) (length 1.27)
-          (name "~" (effects (font (size 1.27 1.27))))
-          (number "2" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
-    (symbol "Switch:SW_Push" (pin_numbers hide) (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
-      (property "Reference" "SW" (at 1.27 2.54 0)
-        (effects (font (size 1.27 1.27)) (justify left))
-      )
-      (property "Value" "SW_Push" (at 0 -1.524 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Footprint" "" (at 0 5.08 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "~" (at 0 5.08 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_keywords" "switch normally-open pushbutton push-button" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "Push button switch, generic, two pins" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "SW_Push_0_1"
-        (circle (center -2.032 0) (radius 0.508)
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 0 1.27)
-            (xy 0 3.048)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 2.54 1.27)
-            (xy -2.54 1.27)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (circle (center 2.032 0) (radius 0.508)
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (pin passive line (at -5.08 0 0) (length 2.54)
-          (name "1" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 5.08 0 180) (length 2.54)
-          (name "2" (effects (font (size 1.27 1.27))))
-          (number "2" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
-  )
-
-  (junction (at 92.71 106.68) (diameter 0) (color 0 0 0 0)
-    (uuid 0416896a-db39-4a87-a5fa-24e4f3e5252d)
-  )
-  (junction (at 128.27 87.63) (diameter 0) (color 0 0 0 0)
-    (uuid 3d72cfe6-d418-4874-8c63-af7183e1d8f8)
-  )
-  (junction (at 124.46 124.46) (diameter 0) (color 0 0 0 0)
-    (uuid 4cc9f095-b311-4e01-a167-8e0614314cad)
-  )
-  (junction (at 114.3 106.68) (diameter 0) (color 0 0 0 0)
-    (uuid c35242e6-9bc3-4b1c-9dc8-646365444e21)
-  )
-
-  (no_connect (at 115.57 80.01) (uuid 76689150-07df-4a32-9d9d-bbe75c379c1b))
-  (no_connect (at 128.27 80.01) (uuid 87d9ff60-9869-4a57-b4f9-06009a2929cf))
-  (no_connect (at 118.11 80.01) (uuid 94913e45-191b-4617-a76a-fc4ed690262e))
-
-  (wire (pts (xy 138.43 87.63) (xy 138.43 85.09))
-    (stroke (width 0) (type default))
-    (uuid 02344b84-cda8-45bd-8dff-815db1e72d36)
-  )
-  (wire (pts (xy 124.46 124.46) (xy 127 124.46))
-    (stroke (width 0) (type default))
-    (uuid 063a15f1-6392-4474-a964-ec6e895fcf67)
-  )
-  (wire (pts (xy 128.27 87.63) (xy 138.43 87.63))
-    (stroke (width 0) (type default))
-    (uuid 0ca18b7c-fb38-4b8b-b77c-a7405676fa13)
-  )
-  (wire (pts (xy 151.13 106.68) (xy 148.59 106.68))
-    (stroke (width 0) (type default))
-    (uuid 0f76ed86-db81-4bdf-b058-dc0f6800fbce)
-  )
-  (wire (pts (xy 120.65 80.01) (xy 120.65 92.71))
-    (stroke (width 0) (type default))
-    (uuid 50a97ec6-069e-42ca-b12f-42deff1a76b3)
-  )
-  (wire (pts (xy 106.68 106.68) (xy 102.87 106.68))
-    (stroke (width 0) (type default))
-    (uuid 5c2717d3-1cc4-4967-8edc-ec785e17ac7d)
-  )
-  (wire (pts (xy 92.71 106.68) (xy 92.71 124.46))
-    (stroke (width 0) (type default))
-    (uuid 5e42a576-311c-4c62-8ce0-b4ab053ce5e5)
-  )
-  (wire (pts (xy 102.87 124.46) (xy 102.87 129.54))
-    (stroke (width 0) (type default))
-    (uuid 7407a2af-c4f9-4112-a1e0-a178afabf056)
-  )
-  (wire (pts (xy 125.73 80.01) (xy 125.73 87.63))
-    (stroke (width 0) (type default))
-    (uuid 7a770344-297c-4705-b3f8-12875a6b664b)
-  )
-  (wire (pts (xy 124.46 129.54) (xy 124.46 124.46))
-    (stroke (width 0) (type default))
-    (uuid 88dd4f8f-45db-49ef-a059-8a80a1624b1d)
-  )
-  (wire (pts (xy 102.87 129.54) (xy 124.46 129.54))
-    (stroke (width 0) (type default))
-    (uuid 8d39c0cb-802d-4143-844d-c732ad8dc29a)
-  )
-  (wire (pts (xy 130.81 80.01) (xy 133.35 80.01))
-    (stroke (width 0) (type default))
-    (uuid aa541277-aae3-4ccc-ae8d-35ddffdf527b)
-  )
-  (wire (pts (xy 128.27 87.63) (xy 128.27 92.71))
-    (stroke (width 0) (type default))
-    (uuid c1d07dad-46b4-4842-afb8-658190c94251)
-  )
-  (wire (pts (xy 124.46 106.68) (xy 138.43 106.68))
-    (stroke (width 0) (type default))
-    (uuid cbc389d3-bce0-4f81-9c8d-2de1c7b8983d)
-  )
-  (wire (pts (xy 111.76 106.68) (xy 114.3 106.68))
-    (stroke (width 0) (type default))
-    (uuid d0e4f0f0-fe4d-4a55-9539-f81ca1c3715f)
-  )
-  (wire (pts (xy 114.3 106.68) (xy 114.3 124.46))
-    (stroke (width 0) (type default))
-    (uuid e21b7e12-d03c-438b-87e4-9418b120c265)
-  )
-  (wire (pts (xy 133.35 77.47) (xy 138.43 77.47))
-    (stroke (width 0) (type default))
-    (uuid e3a54760-fec5-47e2-9149-9d2b4c05cfde)
-  )
-  (wire (pts (xy 125.73 87.63) (xy 128.27 87.63))
-    (stroke (width 0) (type default))
-    (uuid effc4e48-717e-4743-be26-795244e06584)
-  )
-  (wire (pts (xy 133.35 80.01) (xy 133.35 77.47))
-    (stroke (width 0) (type default))
-    (uuid f21e3ba4-c452-45ec-bd9e-86a2b42120a2)
-  )
-  (wire (pts (xy 90.17 106.68) (xy 92.71 106.68))
-    (stroke (width 0) (type default))
-    (uuid fe7e6729-73fa-4f44-b837-5d497bbe3bbf)
-  )
-
-  (label "BROWN" (at 129.54 106.68 90) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid 29c4d19c-5b07-4dac-8acb-e01c070748dd)
-  )
-  (label "WHITE" (at 111.76 106.68 90) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid 316fd1e4-ae0a-47e5-bd91-e4bcc39882ae)
-  )
-  (label "BROWN" (at 110.49 80.01 270) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right bottom))
-    (uuid 39df6c98-7b17-4226-ad52-358978060b0b)
-  )
-  (label "GREEN" (at 90.17 106.68 90) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid 7e1a8157-9ce0-429d-b81c-a7a10684bf8b)
-  )
-  (label "GREEN" (at 120.65 80.01 270) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right bottom))
-    (uuid 810a04ab-ca19-4837-9aa7-a6e7ac4a0c56)
-  )
-  (label "RED" (at 113.03 80.01 270) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right bottom))
-    (uuid 9d05eae3-6ff4-4a6e-8bd9-2b027b136bc8)
-  )
-  (label "WHITE" (at 130.81 80.01 270) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right bottom))
-    (uuid ab2839be-dbc9-4e21-977e-83d139c61088)
-  )
-  (label "VIOLET" (at 125.73 80.01 270) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right bottom))
-    (uuid b1ce378b-e041-458f-b87e-45d97f037763)
-  )
-  (label "YELLOW" (at 118.11 80.01 270) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right bottom))
-    (uuid b4d899f7-4123-4e13-883e-f4dbf5412a09)
-  )
-  (label "RED" (at 127 124.46 90) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid bbed8f5c-13f3-441b-9692-677fc155dfaa)
-  )
-  (label "BLUE" (at 123.19 80.01 270) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right bottom))
-    (uuid e7ff4020-cbe7-4ab8-9a7d-b66ae53fba86)
-  )
-  (label "BLUE" (at 151.13 106.68 90) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid ee77d46b-3abe-4096-89e8-b14f802ea38b)
-  )
-  (label "ORANGE" (at 115.57 80.01 270) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right bottom))
-    (uuid f42e8a93-0e18-4d45-a0f0-fd6163abfdb3)
-  )
-  (label "BROWN" (at 106.68 106.68 90) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid f7e4340d-d8a3-49ce-850a-083d1696ee66)
-  )
-
-  (symbol (lib_id "Device:R") (at 124.46 92.71 270) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 3e4cebcf-301f-4ed3-b26f-d4731f5f7a60)
-    (property "Reference" "R2" (at 130.81 92.71 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "4.7KΩ" (at 130.81 95.25 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" (at 124.46 90.932 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 124.46 92.71 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 357fb528-8933-4763-b528-3026af0e1845))
-    (pin "2" (uuid f7e8f7c5-c443-4bf5-a796-9825b7ae828b))
-    (instances
-      (project "Atari_Video_Touch_Pad"
-        (path "/d1c04c94-5d37-410e-8b71-be70c5a0936f"
-          (reference "R2") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Connector_Generic:Conn_01x09") (at 120.65 74.93 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 3f335cc2-38fe-472d-ace8-2105fb741a3e)
-    (property "Reference" "J1" (at 120.65 68.58 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "DE9" (at 120.65 71.12 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x09_P2.54mm_Horizontal" (at 120.65 74.93 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 120.65 74.93 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 82604cd2-b49b-41a5-bb6e-c3ec9b752379))
-    (pin "2" (uuid 4f2fce88-79fd-4c81-a19b-c019c63046de))
-    (pin "3" (uuid dbd5c1e0-c2a5-461d-af47-999e9a2676bc))
-    (pin "4" (uuid 4a36663e-d332-4770-a200-75a26006dcc8))
-    (pin "5" (uuid b8ca5fc7-326b-46c7-89c2-26adbe80d9d1))
-    (pin "6" (uuid 92da64ae-951d-40af-ab59-ebdd94a62b85))
-    (pin "7" (uuid 175d6013-ebb3-4d38-b49b-c95cefb2de89))
-    (pin "8" (uuid 4c66c1e9-d674-4c21-9b10-d0558fd86527))
-    (pin "9" (uuid 0c3b6f17-2bd9-467e-84d8-cda66878aaf5))
-    (instances
-      (project "Atari_Video_Touch_Pad"
-        (path "/d1c04c94-5d37-410e-8b71-be70c5a0936f"
-          (reference "J1") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Switch:SW_Push") (at 97.79 124.46 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 4996447a-a1da-4e7a-a05e-237a9d051864)
-    (property "Reference" "SW4" (at 97.79 116.84 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "COMPUTER_ON/OFF" (at 97.79 119.38 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "MX1A-11NW:MX1A11NW" (at 97.79 119.38 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 97.79 119.38 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 57d5db97-3534-4b21-8dfa-10d5b3f71575))
-    (pin "2" (uuid 4f59605a-c221-4aa1-b957-6928426e53b7))
-    (instances
-      (project "Atari_Video_Touch_Pad"
-        (path "/d1c04c94-5d37-410e-8b71-be70c5a0936f"
-          (reference "SW4") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Switch:SW_Push") (at 97.79 106.68 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 540aab85-cf19-43a9-b12d-56df2cd7eb68)
-    (property "Reference" "SW1" (at 97.79 99.06 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "FORE_VIEW" (at 97.79 101.6 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "MX1A-11NW:MX1A11NW" (at 97.79 101.6 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 97.79 101.6 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid b3e0cda3-e081-4076-9bcd-a83bdd6b3651))
-    (pin "2" (uuid 384fd5c0-cb65-4cfd-8fa6-91a8ae566fd1))
-    (instances
-      (project "Atari_Video_Touch_Pad"
-        (path "/d1c04c94-5d37-410e-8b71-be70c5a0936f"
-          (reference "SW1") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Switch:SW_Push") (at 119.38 124.46 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 618ac22f-1cf6-4f5f-b45c-e27388bf4511)
-    (property "Reference" "SW5" (at 119.38 116.84 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "SHIELDS_ON/OFF" (at 119.38 119.38 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "MX1A-11NW:MX1A11NW" (at 119.38 119.38 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 119.38 119.38 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 5f076d9f-aa81-44ea-9f39-a1721bb69978))
-    (pin "2" (uuid 6e0640c5-3364-4961-8d9d-86585b5e1b90))
-    (instances
-      (project "Atari_Video_Touch_Pad"
-        (path "/d1c04c94-5d37-410e-8b71-be70c5a0936f"
-          (reference "SW5") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:R") (at 138.43 81.28 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 65532bc9-2578-4bd9-aa7d-d7c85e74b055)
-    (property "Reference" "R1" (at 140.97 80.01 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "4.7KΩ" (at 140.97 82.55 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" (at 136.652 81.28 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 138.43 81.28 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid d2104835-5dd0-491b-bca9-eeac5b29a3e4))
-    (pin "2" (uuid 158fd724-152f-4ad8-8ca9-eff327a314bd))
-    (instances
-      (project "Atari_Video_Touch_Pad"
-        (path "/d1c04c94-5d37-410e-8b71-be70c5a0936f"
-          (reference "R1") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Switch:SW_Push") (at 143.51 106.68 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 72687f58-4f6c-4590-8866-9ca541ff89b7)
-    (property "Reference" "SW3" (at 143.51 99.06 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "HYPERWARP" (at 143.51 101.6 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "MX1A-11NW:MX1A11NW" (at 143.51 101.6 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 143.51 101.6 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 13817321-9f38-46d3-8bb3-bb14c316e10b))
-    (pin "2" (uuid e8525619-8fd0-47d4-a620-f295952b1f50))
-    (instances
-      (project "Atari_Video_Touch_Pad"
-        (path "/d1c04c94-5d37-410e-8b71-be70c5a0936f"
-          (reference "SW3") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Switch:SW_Push") (at 119.38 106.68 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 748f1fe5-0f5d-4caa-ad31-8b39f0849d0e)
-    (property "Reference" "SW2" (at 119.38 99.06 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "GAL_MAP" (at 119.38 101.6 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "MX1A-11NW:MX1A11NW" (at 119.38 101.6 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 119.38 101.6 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 1b326255-ae4b-476f-b3cb-2338bedbd097))
-    (pin "2" (uuid b060b357-507d-49fd-9127-991bda8fb2f2))
-    (instances
-      (project "Atari_Video_Touch_Pad"
-        (path "/d1c04c94-5d37-410e-8b71-be70c5a0936f"
-          (reference "SW2") (unit 1)
-        )
-      )
-    )
-  )
-
-  (sheet_instances
-    (path "/" (page "1"))
-  )
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "d1c04c94-5d37-410e-8b71-be70c5a0936f")
+	(paper "A5")
+	(title_block
+		(title "Star Raiders Video Touch Pad")
+		(date "11-Sept-2023")
+		(rev "INITIAL")
+		(company "Brett Hallen")
+		(comment 1 "youtube.com/@brfff")
+		(comment 3 "Custom keypad for Atari Star Raiders")
+	)
+	(lib_symbols
+		(symbol "Connector_Generic:Conn_01x09"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 0 12.7 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_01x09"
+				(at 0 -12.7 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Generic connector, single row, 01x09, script generated (kicad-library-utils/schlib/autogen/connector/)"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "connector"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Conn_01x09_1_1"
+				(rectangle
+					(start -1.27 11.43)
+					(end 1.27 -11.43)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(rectangle
+					(start -1.27 10.287)
+					(end 0 10.033)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 7.747)
+					(end 0 7.493)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 5.207)
+					(end 0 4.953)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 2.667)
+					(end 0 2.413)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 -2.413)
+					(end 0 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 -4.953)
+					(end 0 -5.207)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 -7.493)
+					(end 0 -7.747)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 -10.033)
+					(end 0 -10.287)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 10.16 0)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 7.62 0)
+					(length 3.81)
+					(name "Pin_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 5.08 0)
+					(length 3.81)
+					(name "Pin_3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 2.54 0)
+					(length 3.81)
+					(name "Pin_4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 3.81)
+					(name "Pin_5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -2.54 0)
+					(length 3.81)
+					(name "Pin_6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -5.08 0)
+					(length 3.81)
+					(name "Pin_7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -7.62 0)
+					(length 3.81)
+					(name "Pin_8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -10.16 0)
+					(length 3.81)
+					(name "Pin_9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Device:R"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R"
+				(at 2.032 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "R"
+				(at 0 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at -1.778 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "R res resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "R_0_1"
+				(rectangle
+					(start -1.016 -2.54)
+					(end 1.016 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Mechanical:MountingHole"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim yes)
+			(in_bom no)
+			(on_board yes)
+			(property "Reference" "H"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "MountingHole"
+				(at 0 3.175 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Mounting Hole without connection"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "mounting hole"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "MountingHole*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "MountingHole_0_1"
+				(circle
+					(center 0 0)
+					(radius 1.27)
+					(stroke
+						(width 1.27)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Switch:SW_Push"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "SW"
+				(at 1.27 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "SW_Push"
+				(at 0 -1.524 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Push button switch, generic, two pins"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "switch normally-open pushbutton push-button"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "SW_Push_0_1"
+				(circle
+					(center -2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 1.27) (xy 0 3.048)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 1.27) (xy -2.54 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+	)
+	(junction
+		(at 99.06 52.07)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c7b0602e-6525-4040-9ca5-2b98e7fc0b5b")
+	)
+	(no_connect
+		(at 76.2 44.45)
+		(uuid "76689150-07df-4a32-9d9d-bbe75c379c1b")
+	)
+	(no_connect
+		(at 88.9 44.45)
+		(uuid "87d9ff60-9869-4a57-b4f9-06009a2929cf")
+	)
+	(no_connect
+		(at 78.74 44.45)
+		(uuid "94913e45-191b-4617-a76a-fc4ed690262e")
+	)
+	(wire
+		(pts
+			(xy 91.44 55.88) (xy 81.28 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0ba3f3ac-ee78-46de-8e53-bd5d77134f1d")
+	)
+	(wire
+		(pts
+			(xy 143.51 81.28) (xy 139.7 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0f76ed86-db81-4bdf-b058-dc0f6800fbce")
+	)
+	(wire
+		(pts
+			(xy 93.98 81.28) (xy 109.22 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3383a04a-4857-4adb-aaf5-e036fab524f4")
+	)
+	(wire
+		(pts
+			(xy 54.61 81.28) (xy 64.77 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5c2717d3-1cc4-4967-8edc-ec785e17ac7d")
+	)
+	(wire
+		(pts
+			(xy 74.93 81.28) (xy 83.82 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6e076a71-cdef-446f-a475-993ae2775e3e")
+	)
+	(wire
+		(pts
+			(xy 86.36 44.45) (xy 86.36 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7a770344-297c-4705-b3f8-12875a6b664b")
+	)
+	(wire
+		(pts
+			(xy 91.44 44.45) (xy 99.06 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aa541277-aae3-4ccc-ae8d-35ddffdf527b")
+	)
+	(wire
+		(pts
+			(xy 81.28 55.88) (xy 81.28 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b70675dc-3e56-4144-9740-60a5378d5c62")
+	)
+	(wire
+		(pts
+			(xy 99.06 52.07) (xy 99.06 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c1d07dad-46b4-4842-afb8-658190c94251")
+	)
+	(wire
+		(pts
+			(xy 119.38 81.28) (xy 129.54 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cbc389d3-bce0-4f81-9c8d-2de1c7b8983d")
+	)
+	(wire
+		(pts
+			(xy 86.36 52.07) (xy 99.06 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "effc4e48-717e-4743-be26-795244e06584")
+	)
+	(label "BROWN"
+		(at 127 81.28 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "29c4d19c-5b07-4dac-8acb-e01c070748dd")
+	)
+	(label "BROWN"
+		(at 44.45 81.28 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "2b3e1b87-a987-40b8-86c8-6f3062239d46")
+	)
+	(label "WHITE"
+		(at 102.87 81.28 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "316fd1e4-ae0a-47e5-bd91-e4bcc39882ae")
+	)
+	(label "BROWN"
+		(at 71.12 44.45 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "39df6c98-7b17-4226-ad52-358978060b0b")
+	)
+	(label "GREEN"
+		(at 81.28 44.45 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "810a04ab-ca19-4837-9aa7-a6e7ac4a0c56")
+	)
+	(label "RED"
+		(at 73.66 44.45 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "9d05eae3-6ff4-4a6e-8bd9-2b027b136bc8")
+	)
+	(label "WHITE"
+		(at 91.44 44.45 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "ab2839be-dbc9-4e21-977e-83d139c61088")
+	)
+	(label "VIOLET"
+		(at 86.36 44.45 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "b1ce378b-e041-458f-b87e-45d97f037763")
+	)
+	(label "GREEN"
+		(at 57.15 81.28 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b44bc5d1-2c87-4583-8d19-c7694787992f")
+	)
+	(label "YELLOW"
+		(at 78.74 44.45 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "b4d899f7-4123-4e13-883e-f4dbf5412a09")
+	)
+	(label "RED"
+		(at 80.01 81.28 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "bbed8f5c-13f3-441b-9692-677fc155dfaa")
+	)
+	(label "BLUE"
+		(at 83.82 44.45 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "e7ff4020-cbe7-4ab8-9a7d-b66ae53fba86")
+	)
+	(label "BLUE"
+		(at 143.51 81.28 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "ee77d46b-3abe-4096-89e8-b14f802ea38b")
+	)
+	(label "ORANGE"
+		(at 76.2 44.45 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "f42e8a93-0e18-4d45-a0f0-fd6163abfdb3")
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 95.25 55.88 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3e4cebcf-301f-4ed3-b26f-d4731f5f7a60")
+		(property "Reference" "R2"
+			(at 101.6 55.88 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "4.7KΩ"
+			(at 101.6 58.42 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
+			(at 95.25 54.102 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 95.25 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 95.25 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "357fb528-8933-4763-b528-3026af0e1845")
+		)
+		(pin "2"
+			(uuid "f7e8f7c5-c443-4bf5-a796-9825b7ae828b")
+		)
+		(instances
+			(project "Atari_Video_Touch_Pad"
+				(path "/d1c04c94-5d37-410e-8b71-be70c5a0936f"
+					(reference "R2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x09")
+		(at 81.28 39.37 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3f335cc2-38fe-472d-ace8-2105fb741a3e")
+		(property "Reference" "J1"
+			(at 81.28 33.02 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "DE9"
+			(at 81.28 35.56 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x09_P2.54mm_Horizontal"
+			(at 81.28 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 81.28 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 81.28 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "82604cd2-b49b-41a5-bb6e-c3ec9b752379")
+		)
+		(pin "2"
+			(uuid "4f2fce88-79fd-4c81-a19b-c019c63046de")
+		)
+		(pin "3"
+			(uuid "dbd5c1e0-c2a5-461d-af47-999e9a2676bc")
+		)
+		(pin "4"
+			(uuid "4a36663e-d332-4770-a200-75a26006dcc8")
+		)
+		(pin "5"
+			(uuid "b8ca5fc7-326b-46c7-89c2-26adbe80d9d1")
+		)
+		(pin "6"
+			(uuid "92da64ae-951d-40af-ab59-ebdd94a62b85")
+		)
+		(pin "7"
+			(uuid "175d6013-ebb3-4d38-b49b-c95cefb2de89")
+		)
+		(pin "8"
+			(uuid "4c66c1e9-d674-4c21-9b10-d0558fd86527")
+		)
+		(pin "9"
+			(uuid "0c3b6f17-2bd9-467e-84d8-cda66878aaf5")
+		)
+		(instances
+			(project "Atari_Video_Touch_Pad"
+				(path "/d1c04c94-5d37-410e-8b71-be70c5a0936f"
+					(reference "J1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 69.85 81.28 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4996447a-a1da-4e7a-a05e-237a9d051864")
+		(property "Reference" "SW4"
+			(at 69.85 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "COMPUTER_ON/OFF"
+			(at 69.85 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Switch_Keyboard_Cherry_MX:SW_Cherry_MX_PCB_1.00u"
+			(at 69.85 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 69.85 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 69.85 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "57d5db97-3534-4b21-8dfa-10d5b3f71575")
+		)
+		(pin "2"
+			(uuid "4f59605a-c221-4aa1-b957-6928426e53b7")
+		)
+		(instances
+			(project "Atari_Video_Touch_Pad"
+				(path "/d1c04c94-5d37-410e-8b71-be70c5a0936f"
+					(reference "SW4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 143.51 34.29 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "51ed86ba-87cb-4267-ae0c-175db78aef53")
+		(property "Reference" "H3"
+			(at 146.05 33.0199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 146.05 35.5599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
+			(at 143.51 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 143.51 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 143.51 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "Atari_Video_Touch_Pad"
+				(path "/d1c04c94-5d37-410e-8b71-be70c5a0936f"
+					(reference "H3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 49.53 81.28 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "540aab85-cf19-43a9-b12d-56df2cd7eb68")
+		(property "Reference" "SW1"
+			(at 49.53 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "FORE_VIEW"
+			(at 49.53 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Switch_Keyboard_Cherry_MX:SW_Cherry_MX_PCB_1.00u"
+			(at 49.53 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 49.53 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 49.53 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b3e0cda3-e081-4076-9bcd-a83bdd6b3651")
+		)
+		(pin "2"
+			(uuid "384fd5c0-cb65-4cfd-8fa6-91a8ae566fd1")
+		)
+		(instances
+			(project "Atari_Video_Touch_Pad"
+				(path "/d1c04c94-5d37-410e-8b71-be70c5a0936f"
+					(reference "SW1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 88.9 81.28 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "618ac22f-1cf6-4f5f-b45c-e27388bf4511")
+		(property "Reference" "SW5"
+			(at 93.726 72.644 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SHIELDS_ON/OFF"
+			(at 93.726 75.184 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Switch_Keyboard_Cherry_MX:SW_Cherry_MX_PCB_1.00u"
+			(at 88.9 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 88.9 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 88.9 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "5f076d9f-aa81-44ea-9f39-a1721bb69978")
+		)
+		(pin "2"
+			(uuid "6e0640c5-3364-4961-8d9d-86585b5e1b90")
+		)
+		(instances
+			(project "Atari_Video_Touch_Pad"
+				(path "/d1c04c94-5d37-410e-8b71-be70c5a0936f"
+					(reference "SW5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 99.06 48.26 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "65532bc9-2578-4bd9-aa7d-d7c85e74b055")
+		(property "Reference" "R1"
+			(at 101.6 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "4.7KΩ"
+			(at 101.6 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
+			(at 97.282 48.26 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 99.06 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 99.06 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d2104835-5dd0-491b-bca9-eeac5b29a3e4")
+		)
+		(pin "2"
+			(uuid "158fd724-152f-4ad8-8ca9-eff327a314bd")
+		)
+		(instances
+			(project "Atari_Video_Touch_Pad"
+				(path "/d1c04c94-5d37-410e-8b71-be70c5a0936f"
+					(reference "R1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 134.62 81.28 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "72687f58-4f6c-4590-8866-9ca541ff89b7")
+		(property "Reference" "SW3"
+			(at 134.62 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "HYPERWARP"
+			(at 134.62 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Switch_Keyboard_Cherry_MX:SW_Cherry_MX_PCB_1.00u"
+			(at 134.62 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 134.62 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 134.62 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "13817321-9f38-46d3-8bb3-bb14c316e10b")
+		)
+		(pin "2"
+			(uuid "e8525619-8fd0-47d4-a620-f295952b1f50")
+		)
+		(instances
+			(project "Atari_Video_Touch_Pad"
+				(path "/d1c04c94-5d37-410e-8b71-be70c5a0936f"
+					(reference "SW3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 114.3 81.28 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "748f1fe5-0f5d-4caa-ad31-8b39f0849d0e")
+		(property "Reference" "SW2"
+			(at 114.3 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GAL_MAP"
+			(at 114.3 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Switch_Keyboard_Cherry_MX:SW_Cherry_MX_PCB_1.00u"
+			(at 114.3 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 114.3 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 114.3 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "1b326255-ae4b-476f-b3cb-2338bedbd097")
+		)
+		(pin "2"
+			(uuid "b060b357-507d-49fd-9127-991bda8fb2f2")
+		)
+		(instances
+			(project "Atari_Video_Touch_Pad"
+				(path "/d1c04c94-5d37-410e-8b71-be70c5a0936f"
+					(reference "SW2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 151.13 34.29 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a0f6f1ad-daa9-42c4-8d41-b3f02c9f52b3")
+		(property "Reference" "H4"
+			(at 153.67 33.0199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 153.67 35.5599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
+			(at 151.13 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 151.13 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 151.13 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "Atari_Video_Touch_Pad"
+				(path "/d1c04c94-5d37-410e-8b71-be70c5a0936f"
+					(reference "H4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 135.89 34.29 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a9e051c9-a25f-42ca-a921-57e3c70dfe37")
+		(property "Reference" "H2"
+			(at 138.43 33.0199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 138.43 35.5599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
+			(at 135.89 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 135.89 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 135.89 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "Atari_Video_Touch_Pad"
+				(path "/d1c04c94-5d37-410e-8b71-be70c5a0936f"
+					(reference "H2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 128.27 34.29 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d4a3a073-ef48-4783-9ffa-6dc608452fb6")
+		(property "Reference" "H1"
+			(at 130.81 33.0199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 130.81 35.5599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
+			(at 128.27 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 128.27 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 128.27 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project ""
+				(path "/d1c04c94-5d37-410e-8b71-be70c5a0936f"
+					(reference "H1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
 )
